@@ -1,4 +1,4 @@
-# Kansō Ink preview theme for Inkdrop
+# Kanso Ink preview theme for Inkdrop
 
 ## Screenshot
 
@@ -26,7 +26,7 @@ $ ipm install kanso-ink-syntax
 
 ## Credits
 
-- [webhooked](https://github.com/webhooked/kanso.nvim) for the original Kansō Neovim theme
+- [webhooked](https://github.com/webhooked/kanso.nvim) for the original Kanso Neovim theme
 - [rebelot](https://github.com/rebelot/kanagawa.nvim) for the original Kanagawa Neovim theme
 
 ## License
