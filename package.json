@@ -1,15 +1,15 @@
 {
-  "name": "github-preview",
-  "description": "Github preview theme for Inkdrop Markdown Editor",
-  "version": "2.0.0",
+  "name": "kanso-ink-preview",
+  "description": "Kanso Ink preview theme for Inkdrop Markdown Editor",
+  "version": "0.9.0",
   "theme": "preview",
   "scripts": {},
-  "repository": "https://github.com/inkdropapp/inkdrop-github-preview-theme",
+  "repository": "https://github.com/dgavrilov/kanso-ink-preview",
   "license": "MIT",
   "styleSheets": [
-    "github-markdown.css"
+    "kanso-ink.css"
   ],
   "engines": {
-    "inkdrop": "^6.x"
+    "inkdrop": ">=5.9.0 <7"
   }
 }

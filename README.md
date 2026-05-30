@@ -1,11 +1,34 @@
-# Github Preview Theme
+# Kansō Ink preview theme for Inkdrop
 
-A default Markdown preview theme for [Inkdrop](https://www.inkdrop.app/).
+## Screenshot
 
-This theme itself does not add any styles since the app provides the default styles based on [GitHub's theme](https://github.com/sindresorhus/github-markdown-css/).
+![screenshot](https://raw.githubusercontent.com/dgavrilov/kanso-ink-preview/master/screenshot.png)
 
-To customize it in your preview theme, tweak the CSS variables that are commented out in `styles/github-markdown.css`.
+## Features
 
-## How to publish your own theme
+- WCAG 2.1 AA compliant for comfortable code readability
+- Comfortable contrast levels for reduced eye strain
 
-Please check out the documentation: [Creating a Theme](https://docs.inkdrop.app/manual/creating-a-theme)
+## Installation
+
+```sh
+$ ipm install kanso-ink-preview
+
+# Additional
+$ ipm install kanso-ink-dark-ui
+$ ipm install kanso-ink-syntax
+```
+
+## Related
+
+* [dgavrilov/kanso-ink-dark-ui](https://github.com/dgavrilov/kanso-ink-dark-ui)
+* [dgavrilov/kanso-ink-syntax](https://github.com/dgavrilov/kanso-ink-syntax)
+
+## Credits
+
+- [webhooked](https://github.com/webhooked/kanso.nvim) for the original Kansō Neovim theme
+- [rebelot](https://github.com/rebelot/kanagawa.nvim) for the original Kanagawa Neovim theme
+
+## License
+
+This project is licensed under [MIT](LICENSE) license.

@@ -1,0 +1,70 @@
+.mde-preview {
+  /*
+  color-scheme: light;
+  */
+}
+
+body[class*='dark-ui'] {
+  .mde-preview {
+    color-scheme: dark;
+
+    --color-syntax-comment: #75797f;
+    --color-syntax-constant: #B6927B;
+    --color-syntax-entity: #A292A3;
+    --color-syntax-storage-modifier-import: #c5c9c7;
+    --color-syntax-entity-tag: #8A9A7B;
+    --color-syntax-keyword: #C4746E;
+    --color-syntax-string: #8A9A7B;
+    --color-syntax-variable: #c5c9c7;
+    --color-syntax-brackethighlighter-unmatched: #C34043;
+    --color-syntax-invalid-illegal-text: #c5c9c7;
+    --color-syntax-invalid-illegal-bg: #E82424;
+    --color-syntax-carriage-return-text: #c5c9c7;
+    --color-syntax-carriage-return-bg: #C34043;
+    --color-syntax-string-regexp: #B98D7B;
+    --color-syntax-markup-list: #C4B28A;
+    --color-syntax-markup-heading: #8BA4B0;
+    --color-syntax-markup-italic: #C4746E;
+    --color-syntax-markup-bold: #c5c9c7;
+    --color-syntax-markup-deleted-text: #C4746E;
+    --color-syntax-markup-deleted-bg: rgba(195, 64, 67, 0.2);
+    --color-syntax-markup-inserted-text: #8A9A7B;
+    --color-syntax-markup-inserted-bg: rgba(118, 148, 106, 0.2);
+    --color-syntax-markup-changed-text: #DCA561;
+    --color-syntax-markup-changed-bg: rgba(220, 165, 97, 0.2);
+    --color-syntax-markup-ignored-text: #c5c9c7;
+    --color-syntax-markup-ignored-bg: #2D4F67;
+    --color-syntax-meta-diff-range: #A292A3;
+    --color-syntax-brackethighlighter-angle: #75797f;
+    --color-syntax-sublimelighter-gutter-mark: #5C6066;
+    --color-syntax-constant-other-reference-link: #8A9A7B;
+
+    --color-fg-default: #c5c9c7;
+    --color-fg-muted: #9E9B93;
+    --color-fg-subtle: #75797f;
+    --color-canvas-subtle: rgba(34, 38, 45, 0.6);
+    --color-border-default: #393B42;
+    --color-border-muted: #22262D;
+    --color-neutral-muted: rgba(57, 59, 66, 0.4);
+    --color-accent-fg: var(--primary-color, #6A9589);
+    --color-accent-emphasis: #2D4F67;
+    --color-success-fg: #8A9A7B;
+    --color-success-emphasis: #76946A;
+    --color-attention-fg: #DCA561;
+    --color-attention-emphasis: #DCA561;
+    --color-attention-subtle: rgba(220, 165, 97, 0.15);
+    --color-danger-fg: #C4746E;
+    --color-danger-emphasis: #C34043;
+    --color-done-fg: #A292A3;
+    --color-done-emphasis: #A292A3;
+
+    --color-inline-mark-bg: rgba(196, 178, 138, 0.3);
+    --color-inline-mark-underline: #C4B28A;
+
+    --gfm-alert-note: #8BA4B0;
+    --gfm-alert-tip: #8A9A7B;
+    --gfm-alert-important: #A292A3;
+    --gfm-alert-warning: #DCA561;
+    --gfm-alert-caution: #C4746E;
+  }
+}
