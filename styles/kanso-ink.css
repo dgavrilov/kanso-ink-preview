@@ -10,13 +10,13 @@ body[class*="dark-ui"] {
 
     --color-syntax-comment: #75797f;
     --color-syntax-constant: #b6927b;
-    --color-syntax-entity: #a292a3;
-    --color-syntax-storage-modifier-import: #c5c9c7;
-    --color-syntax-entity-tag: #8a9a7b;
-    --color-syntax-keyword: #c4746e;
+    --color-syntax-entity: #8ba4b0;
+    --color-syntax-storage-modifier-import: #9e9b93;
+    --color-syntax-entity-tag: #c4b28a;
+    --color-syntax-keyword: #8992a7;
     --color-syntax-string: #8a9a7b;
     --color-syntax-variable: #c5c9c7;
-    --color-syntax-brackethighlighter-unmatched: #c34043;
+    --color-syntax-brackethighlighter-unmatched: #c4746e;
     --color-syntax-invalid-illegal-text: #c5c9c7;
     --color-syntax-invalid-illegal-bg: #e82424;
     --color-syntax-carriage-return-text: #c5c9c7;
@@ -26,9 +26,9 @@ body[class*="dark-ui"] {
     --color-syntax-markup-heading: #8ba4b0;
     --color-syntax-markup-italic: #c4746e;
     --color-syntax-markup-bold: #c5c9c7;
-    --color-syntax-markup-deleted-text: #c4746e;
+    --color-syntax-markup-deleted-text: #c34043;
     --color-syntax-markup-deleted-bg: rgba(195, 64, 67, 0.2);
-    --color-syntax-markup-inserted-text: #8a9a7b;
+    --color-syntax-markup-inserted-text: #76946a;
     --color-syntax-markup-inserted-bg: rgba(118, 148, 106, 0.2);
     --color-syntax-markup-changed-text: #dca561;
     --color-syntax-markup-changed-bg: rgba(220, 165, 97, 0.2);
@@ -37,11 +37,11 @@ body[class*="dark-ui"] {
     --color-syntax-meta-diff-range: #a292a3;
     --color-syntax-brackethighlighter-angle: #75797f;
     --color-syntax-sublimelighter-gutter-mark: #5c6066;
-    --color-syntax-constant-other-reference-link: #8a9a7b;
+    --color-syntax-constant-other-reference-link: #c4b28a;
 
     --color-fg-default: #c5c9c7;
     --color-fg-muted: #9e9b93;
-    --color-fg-subtle: #75797f;
+    --color-fg-subtle: #5c6066;
     --color-canvas-subtle: rgba(34, 38, 45, 0.6);
     --color-border-default: #393b42;
     --color-border-muted: #22262d;
@@ -53,7 +53,7 @@ body[class*="dark-ui"] {
     --color-attention-fg: #dca561;
     --color-attention-emphasis: #dca561;
     --color-attention-subtle: rgba(220, 165, 97, 0.15);
-    --color-danger-fg: #c4746e;
+    --color-danger-fg: #c34043;
     --color-danger-emphasis: #c34043;
     --color-done-fg: #a292a3;
     --color-done-emphasis: #a292a3;
