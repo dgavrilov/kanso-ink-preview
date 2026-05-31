@@ -8,6 +8,11 @@
 
 - WCAG 2.1 AA compliant for comfortable code readability
 - Comfortable contrast levels for reduced eye strain
+- Customizable preview font family
+
+## Configuration
+
+The font family used for preview text can be changed in **Preferences → Plugins → Install → Themes**: select the kanso-ink-preview theme and set the **Font Family** option. It defaults to Inkdrop's built-in preview font.
 
 ## Installation
 
