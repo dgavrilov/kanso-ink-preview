@@ -1,6 +1,4 @@
-/* Inkdrop v6: override @inkdropapp/css/markdown.css @layer theme.preview.base defaults */
 :root {
-  /* Kanso Ink palette */
   --base00: #c5c9c7;
   --base01: #22262d;
   --base02: #c5c9c7;
@@ -19,14 +17,20 @@
   --base0F: #a292a3;
   --base10: #8ea4a2;
   --base11: #b6927b;
+  --base12: #6a9589;
+  --base13: #5c6066;
+  --base14: #2d4f67;
+  --base15: #76946a;
+  --base16: #c34043;
+  --base17: #e82424;
 
-  /* Editor foreground — used as default by --syntax-name-color etc. in syntax.css */
+  /* editor */
   --editor-foreground-color: var(--base02);
-
-  /* Syntax tokens — applied to .mde-preview .codeblock by @inkdropapp/css/syntax.css */
   --syntax-keyword-color: var(--base0A);
   --syntax-control-keyword-color: var(--base0A);
   --syntax-module-keyword-color: var(--base0A);
+  --syntax-definition-keyword-color: var(--base0A);
+  --syntax-operator-keyword-color: var(--base0A);
   --syntax-string-color: var(--base09);
   --syntax-comment-color: var(--base03);
   --syntax-comment-font-style: italic;
@@ -34,50 +38,48 @@
   --syntax-variable-name-color: var(--base02);
   --syntax-name-definition-color: var(--base0C);
   --syntax-variable-name-function-color: var(--base0C);
+  --syntax-variable-name-definition-color: var(--base0C);
   --syntax-class-name-color: var(--base10);
   --syntax-operator-color: var(--base11);
-  --syntax-operator-keyword-color: var(--base0A);
   --syntax-deref-operator-color: var(--base11);
-  --syntax-arithmetic-operator-color: var(--base11);
-  --syntax-logic-operator-color: var(--base11);
+  --syntax-arithmetic-operator-color: var(--base08);
+  --syntax-logic-operator-color: var(--base08);
   --syntax-bitwise-operator-color: var(--base11);
-  --syntax-compare-operator-color: var(--base11);
-  --syntax-update-operator-color: var(--base11);
-  --syntax-definition-operator-color: var(--base11);
+  --syntax-compare-operator-color: var(--base08);
+  --syntax-update-operator-color: var(--base08);
+  --syntax-definition-operator-color: var(--base08);
   --syntax-control-operator-color: var(--base11);
   --syntax-type-operator-color: var(--base02);
   --syntax-tag-name-color: var(--base08);
   --syntax-attribute-name-color: var(--base0A);
+  --syntax-attribute-value-color: var(--base09);
   --syntax-atom-color: var(--base11);
   --syntax-bool-color: var(--base11);
-  --syntax-meta-color: var(--base0E);
-  --syntax-property-name-color: var(--base0C);
-  --syntax-heading-color: var(--base0C);
-  --syntax-link-color: var(--base0E);
-  --syntax-name-function-color: var(--base0C);
-  --syntax-property-name-function-color: var(--base0C);
-  --syntax-macro-name-color: var(--base0C);
-  --syntax-namespace-color: var(--base10);
-  --syntax-label-name-color: var(--base0A);
-  --syntax-name-constant-color: var(--base0D);
-  --syntax-variable-name-constant-color: var(--base0D);
-  --syntax-property-name-constant-color: var(--base0D);
-  --syntax-variable-name-definition-color: var(--base0C);
-  --syntax-name-standard-color: var(--base0C);
-  --syntax-variable-name-standard-color: var(--base0C);
-  --syntax-property-name-standard-color: var(--base0C);
+  --syntax-null-color: var(--base0F);
   --syntax-literal-color: var(--base0F);
   --syntax-character-color: var(--base0F);
   --syntax-integer-color: var(--base0F);
   --syntax-float-color: var(--base0F);
-  --syntax-null-color: var(--base0F);
   --syntax-unit-color: var(--base0F);
   --syntax-regexp-color: var(--base0D);
-  --syntax-color-color: var(--base09);
-  --syntax-url-color: var(--base0C);
-  --syntax-attribute-value-color: var(--base09);
+  --syntax-meta-color: var(--base0E);
+  --syntax-property-name-color: var(--base0C);
+  --syntax-property-name-function-color: var(--base0C);
+  --syntax-name-function-color: var(--base0C);
+  --syntax-macro-name-color: var(--base0C);
+  --syntax-name-constant-color: var(--base0D);
+  --syntax-variable-name-constant-color: var(--base0D);
+  --syntax-property-name-constant-color: var(--base0D);
+  --syntax-name-standard-color: var(--base0C);
+  --syntax-variable-name-standard-color: var(--base0C);
+  --syntax-property-name-standard-color: var(--base0C);
+  --syntax-namespace-color: var(--base10);
+  --syntax-label-name-color: var(--base0A);
   --syntax-modifier-color: var(--base0A);
-  --syntax-definition-keyword-color: var(--base0A);
+  --syntax-heading-color: var(--base0C);
+  --syntax-link-color: var(--base0E);
+  --syntax-url-color: var(--base0C);
+  --syntax-color-color: var(--base09);
   --syntax-separator-color: var(--base02);
   --syntax-angle-bracket-color: var(--base02);
   --syntax-square-bracket-color: var(--base02);
@@ -93,211 +95,198 @@
   --syntax-invalid-color: var(--base0B);
   --syntax-invalid-border-bottom: 1px dotted var(--base0B);
 
-  /* GFM alerts */
-  --gfm-alert-note: #8ba4b0;
-  --gfm-alert-tip: #8a9a7b;
-  --gfm-alert-important: #a292a3;
-  --gfm-alert-warning: #dca561;
-  --gfm-alert-caution: #c4746e;
-
-  /* Prose */
-  --mde-preview-heading-border-color: #393b42;
-  --mde-preview-heading-muted-text-color: #9e9b93;
-  --mde-preview-strong-color: #c5c9c7;
-
-  /* Links */
-  --mde-preview-link-color: #6a9589;
-
-  /* Blockquote */
-  --mde-preview-blockquote-text-color: #9e9b93;
-  --mde-preview-blockquote-border-color: #393b42;
-
-  /* Horizontal rule */
-  --mde-preview-hr-border-color: #393b42;
-  --mde-preview-hr-background-color: #22262d;
-
-  /* Inline code */
-  --mde-preview-inline-code-text-color: #c5c9c7;
+  /* v6 preview */
+  --mde-preview-heading-border-color: var(--base04);
+  --mde-preview-heading-muted-text-color: var(--base07);
+  --mde-preview-strong-color: var(--base02);
+  --mde-preview-link-color: var(--base12);
+  --mde-preview-blockquote-text-color: var(--base07);
+  --mde-preview-blockquote-border-color: var(--base04);
+  --mde-preview-hr-border-color: var(--base04);
+  --mde-preview-hr-background-color: var(--base01);
+  --mde-preview-inline-code-text-color: var(--base02);
   --mde-preview-inline-code-background-color: rgba(255, 255, 255, 0.05);
   --mde-preview-inline-code-border-width: 0px;
   --mde-preview-inline-code-border-color: transparent;
-
-  /* Code blocks */
-  --mde-preview-codeblock-text-color: #c5c9c7;
+  --mde-preview-codeblock-text-color: var(--base02);
   --mde-preview-codeblock-background-color: rgba(255, 255, 255, 0.03);
   --mde-preview-codeblock-meta-background-color: rgba(255, 255, 255, 0.05);
   --mde-preview-codeblock-border-color: transparent;
-
-  /* Tables */
-  --mde-preview-table-head-text-color: #c4b28a;
-  --mde-preview-table-head-background-color: rgba(34, 38, 45, 0.6);
-  --mde-preview-table-border-color: #393b42;
-  --mde-preview-table-row-background-color: rgba(34, 38, 45, 0.4);
-  --mde-preview-table-row-border-color: #393b42;
-  --mde-preview-table-row-stripe-background-color: rgba(57, 59, 66, 0.2);
-
-  /* Images */
-  --mde-preview-image-background-color: rgba(34, 38, 45, 0.6);
-
-  /* Mark (==highlight==) */
-  --mde-preview-inline-mark-text-color: #c5c9c7;
-  --mde-preview-inline-mark-background-color: color-mix(in srgb, #dca561 30%, transparent);
-  --mde-preview-inline-mark-underline-color: #dca561;
-
-  /* Footnotes */
-  --mde-preview-footnote-text-color: #9e9b93;
-  --mde-preview-footnote-border-color: #393b42;
-  --mde-preview-footnote-highlight-border-color: #6a9589;
-
-  /* Task list */
+  --mde-preview-table-head-text-color: var(--base08);
+  --mde-preview-table-head-background-color: color-mix(in srgb, var(--base01) 60%, transparent);
+  --mde-preview-table-border-color: var(--base04);
+  --mde-preview-table-row-background-color: color-mix(in srgb, var(--base01) 40%, transparent);
+  --mde-preview-table-row-border-color: var(--base04);
+  --mde-preview-table-row-stripe-background-color: color-mix(in srgb, var(--base04) 20%, transparent);
+  --mde-preview-image-background-color: color-mix(in srgb, var(--base01) 60%, transparent);
+  --mde-preview-inline-mark-text-color: var(--base02);
+  --mde-preview-inline-mark-background-color: color-mix(in srgb, var(--base0D) 30%, transparent);
+  --mde-preview-inline-mark-underline-color: var(--base0D);
+  --mde-preview-footnote-text-color: var(--base07);
+  --mde-preview-footnote-border-color: var(--base04);
+  --mde-preview-footnote-highlight-border-color: var(--base12);
   --mde-preview-task-list-checked-color: currentColor;
-
-  /* Keyboard */
-  --mde-preview-kbd-text-color: #c5c9c7;
-  --mde-preview-kbd-background-color: rgba(57, 59, 66, 0.3);
-  --mde-preview-kbd-border-color: #393b42;
+  --mde-preview-kbd-text-color: var(--base02);
+  --mde-preview-kbd-background-color: color-mix(in srgb, var(--base04) 30%, transparent);
+  --mde-preview-kbd-border-color: var(--base04);
+  --gfm-alert-note: var(--base0C);
+  --gfm-alert-tip: var(--base09);
+  --gfm-alert-important: var(--base0F);
+  --gfm-alert-warning: var(--base0D);
+  --gfm-alert-caution: var(--base0B);
 }
 
-/* Syntax highlighting for preview code blocks.
-   syntax.css targets .mde-preview .codeblock but actual DOM uses .mde-preview-code */
-.mde-preview-code .tok-keyword,
-.mde-preview-code .tok-control-keyword,
-.mde-preview-code .tok-module-keyword,
-.mde-preview-code .tok-definition-keyword,
-.mde-preview-code .tok-operator-keyword { color: #8992a7; }
-
-.mde-preview-code .tok-comment,
-.mde-preview-code .tok-line-comment,
-.mde-preview-code .tok-block-comment,
-.mde-preview-code .tok-doc-comment { color: #75797f; font-style: italic; }
-
-.mde-preview-code .tok-string,
-.mde-preview-code .tok-string-special { color: #8a9a7b; }
-
-.mde-preview-code .tok-number,
-.mde-preview-code .tok-integer,
-.mde-preview-code .tok-float,
-.mde-preview-code .tok-literal,
-.mde-preview-code .tok-bool,
-.mde-preview-code .tok-null,
-.mde-preview-code .tok-atom,
-.mde-preview-code .tok-unit { color: #a292a3; }
-
-.mde-preview-code .tok-regexp { color: #dca561; }
-
-.mde-preview-code .tok-variable-name.tok-definition,
-.mde-preview-code .tok-name.tok-definition,
-.mde-preview-code .tok-variable-name.tok-function,
-.mde-preview-code .tok-name.tok-function,
-.mde-preview-code .tok-property-name.tok-function { color: #8ba4b0; }
-
-.mde-preview-code .tok-property-name { color: #8ba4b0; }
-
-.mde-preview-code .tok-class-name { color: #8ea4a2; }
-
-.mde-preview-code .tok-tag-name { color: #c4b28a; }
-
-.mde-preview-code .tok-attribute-name { color: #8992a7; }
-
-.mde-preview-code .tok-attribute-value { color: #8a9a7b; }
-
-.mde-preview-code .tok-operator,
-.mde-preview-code .tok-compare-operator,
-.mde-preview-code .tok-logic-operator,
-.mde-preview-code .tok-arithmetic-operator,
-.mde-preview-code .tok-update-operator,
-.mde-preview-code .tok-definition-operator,
-.mde-preview-code .tok-control-operator { color: #c4b28a; }
-
-.mde-preview-code .tok-deref-operator { color: #b6927b; }
-
-.mde-preview-code .tok-inserted { color: #8a9a7b; }
-.mde-preview-code .tok-deleted { color: #c4746e; }
-.mde-preview-code .tok-invalid { color: #c4746e; border-bottom: 1px dotted #c4746e; }
-
-/* Checked task text — muted like editor (.md-task-done-text uses --base03) */
-.mde-preview .task-list-item.checked {
-  color: #75797f;
-}
-
-/* Strikethrough line same color as text */
-.mde-preview del {
-  text-decoration-color: currentColor;
-}
-
-/* kbd — default 11px in markdown.css is too small */
-.mde-preview kbd {
-  font-size: 13px;
-}
-
-/* Inkdrop v5: variables consumed by the bundled github-markdown stylesheet */
+/* v6 */
 .mde-preview {
-  /*
-  color-scheme: light;
-  */
+  --syntax-keyword-color: var(--base0A);
+  --syntax-control-keyword-color: var(--base0A);
+  --syntax-module-keyword-color: var(--base0A);
+  --syntax-definition-keyword-color: var(--base0A);
+  --syntax-operator-keyword-color: var(--base0A);
+  --syntax-string-color: var(--base09);
+  --syntax-comment-color: var(--base03);
+  --syntax-comment-font-style: italic;
+  --syntax-number-color: var(--base0F);
+  --syntax-variable-name-color: var(--base02);
+  --syntax-name-definition-color: var(--base0C);
+  --syntax-variable-name-function-color: var(--base0C);
+  --syntax-variable-name-definition-color: var(--base0C);
+  --syntax-class-name-color: var(--base10);
+  --syntax-operator-color: var(--base11);
+  --syntax-deref-operator-color: var(--base11);
+  --syntax-arithmetic-operator-color: var(--base08);
+  --syntax-logic-operator-color: var(--base08);
+  --syntax-bitwise-operator-color: var(--base11);
+  --syntax-compare-operator-color: var(--base08);
+  --syntax-update-operator-color: var(--base08);
+  --syntax-definition-operator-color: var(--base08);
+  --syntax-control-operator-color: var(--base11);
+  --syntax-type-operator-color: var(--base02);
+  --syntax-tag-name-color: var(--base08);
+  --syntax-attribute-name-color: var(--base0A);
+  --syntax-attribute-value-color: var(--base09);
+  --syntax-atom-color: var(--base11);
+  --syntax-bool-color: var(--base11);
+  --syntax-null-color: var(--base0F);
+  --syntax-literal-color: var(--base0F);
+  --syntax-character-color: var(--base0F);
+  --syntax-integer-color: var(--base0F);
+  --syntax-float-color: var(--base0F);
+  --syntax-unit-color: var(--base0F);
+  --syntax-regexp-color: var(--base0D);
+  --syntax-meta-color: var(--base0E);
+  --syntax-property-name-color: var(--base0C);
+  --syntax-property-name-function-color: var(--base0C);
+  --syntax-name-function-color: var(--base0C);
+  --syntax-macro-name-color: var(--base0C);
+  --syntax-name-constant-color: var(--base0D);
+  --syntax-variable-name-constant-color: var(--base0D);
+  --syntax-property-name-constant-color: var(--base0D);
+  --syntax-name-standard-color: var(--base0C);
+  --syntax-variable-name-standard-color: var(--base0C);
+  --syntax-property-name-standard-color: var(--base0C);
+  --syntax-namespace-color: var(--base10);
+  --syntax-label-name-color: var(--base0A);
+  --syntax-modifier-color: var(--base0A);
+  --syntax-heading-color: var(--base0C);
+  --syntax-link-color: var(--base0E);
+  --syntax-url-color: var(--base0C);
+  --syntax-color-color: var(--base09);
+  --syntax-separator-color: var(--base02);
+  --syntax-angle-bracket-color: var(--base02);
+  --syntax-square-bracket-color: var(--base02);
+  --syntax-paren-color: var(--base02);
+  --syntax-brace-color: var(--base02);
+  --syntax-bracket-color: var(--base02);
+  --syntax-punctuation-color: var(--base02);
+  --syntax-inserted-color: var(--base09);
+  --syntax-deleted-color: var(--base0B);
+  --syntax-changed-color: var(--base0D);
+  --syntax-annotation-color: var(--base0A);
+  --syntax-processing-instruction-color: var(--base03);
+  --syntax-invalid-color: var(--base0B);
+  --syntax-invalid-border-bottom: 1px dotted var(--base0B);
 }
 
+.mde-preview h1,
+.mde-preview h2,
+.mde-preview h3,
+.mde-preview h4,
+.mde-preview h5,
+.mde-preview h6 {
+  font-weight: 600;
+}
+
+.mde-preview .task-list-item.checked {
+  color: var(--base03);
+}
+
+.mde-preview kbd {
+  font-size: 0.85em;
+}
+
+/* v5 */
 body[class*="dark-ui"] {
   .mde-preview {
     color-scheme: dark;
 
-    --color-syntax-comment: #75797f;
-    --color-syntax-constant: #b6927b;
-    --color-syntax-entity: #8ba4b0;
-    --color-syntax-storage-modifier-import: #9e9b93;
-    --color-syntax-entity-tag: #c4b28a;
-    --color-syntax-keyword: #8992a7;
-    --color-syntax-string: #8a9a7b;
-    --color-syntax-variable: #c5c9c7;
-    --color-syntax-brackethighlighter-unmatched: #c4746e;
-    --color-syntax-invalid-illegal-text: #c5c9c7;
-    --color-syntax-invalid-illegal-bg: #e82424;
-    --color-syntax-carriage-return-text: #c5c9c7;
-    --color-syntax-carriage-return-bg: #c34043;
-    --color-syntax-string-regexp: #b98d7b;
-    --color-syntax-markup-list: #c4b28a;
-    --color-syntax-markup-heading: #8ba4b0;
-    --color-syntax-markup-italic: #c4746e;
-    --color-syntax-markup-bold: #c5c9c7;
-    --color-syntax-markup-deleted-text: #c34043;
-    --color-syntax-markup-deleted-bg: rgba(195, 64, 67, 0.2);
-    --color-syntax-markup-inserted-text: #76946a;
-    --color-syntax-markup-inserted-bg: rgba(118, 148, 106, 0.2);
-    --color-syntax-markup-changed-text: #dca561;
-    --color-syntax-markup-changed-bg: rgba(220, 165, 97, 0.2);
-    --color-syntax-markup-ignored-text: #c5c9c7;
-    --color-syntax-markup-ignored-bg: #2d4f67;
-    --color-syntax-meta-diff-range: #a292a3;
-    --color-syntax-brackethighlighter-angle: #75797f;
-    --color-syntax-sublimelighter-gutter-mark: #5c6066;
-    --color-syntax-constant-other-reference-link: #c4b28a;
+    --color-syntax-comment: var(--base03);
+    --color-syntax-constant: var(--base0C);
+    --color-syntax-entity: var(--base0F);
+    --color-syntax-storage-modifier-import: var(--base07);
+    --color-syntax-entity-tag: var(--base08);
+    --color-syntax-keyword: var(--base0A);
+    --color-syntax-string: var(--base09);
+    --color-syntax-variable: var(--base02);
+    --color-syntax-brackethighlighter-unmatched: var(--base0B);
+    --color-syntax-invalid-illegal-text: var(--base02);
+    --color-syntax-invalid-illegal-bg: var(--base17);
+    --color-syntax-carriage-return-text: var(--base02);
+    --color-syntax-carriage-return-bg: var(--base16);
+    --color-syntax-string-regexp: var(--base0E);
+    --color-syntax-markup-list: var(--base08);
+    --color-syntax-markup-heading: var(--base0C);
+    --color-syntax-markup-italic: var(--base0B);
+    --color-syntax-markup-bold: var(--base02);
+    --color-syntax-markup-deleted-text: var(--base16);
+    --color-syntax-markup-deleted-bg: color-mix(in srgb, var(--base16) 20%, transparent);
+    --color-syntax-markup-inserted-text: var(--base15);
+    --color-syntax-markup-inserted-bg: color-mix(in srgb, var(--base15) 20%, transparent);
+    --color-syntax-markup-changed-text: var(--base0D);
+    --color-syntax-markup-changed-bg: color-mix(in srgb, var(--base0D) 20%, transparent);
+    --color-syntax-markup-ignored-text: var(--base02);
+    --color-syntax-markup-ignored-bg: var(--base14);
+    --color-syntax-meta-diff-range: var(--base0F);
+    --color-syntax-brackethighlighter-angle: var(--base08);
+    --color-syntax-sublimelighter-gutter-mark: var(--base13);
+    --color-syntax-constant-other-reference-link: var(--base08);
 
-    --color-fg-default: #c5c9c7;
-    --color-fg-muted: #9e9b93;
-    --color-fg-subtle: #5c6066;
-    --color-canvas-subtle: rgba(34, 38, 45, 0.6);
-    --color-border-default: #393b42;
-    --color-border-muted: #22262d;
-    --color-neutral-muted: rgba(57, 59, 66, 0.4);
-    --color-accent-fg: #6a9589;
-    --color-accent-emphasis: #2d4f67;
-    --color-success-fg: #8a9a7b;
-    --color-success-emphasis: #76946a;
-    --color-attention-fg: #dca561;
-    --color-attention-emphasis: #dca561;
-    --color-attention-subtle: rgba(220, 165, 97, 0.15);
-    --color-danger-fg: #c34043;
-    --color-danger-emphasis: #c34043;
-    --color-done-fg: #a292a3;
-    --color-done-emphasis: #a292a3;
+    --color-fg-default: var(--base02);
+    --color-fg-muted: var(--base07);
+    --color-fg-subtle: var(--base13);
+    --color-canvas-subtle: color-mix(in srgb, var(--base01) 60%, transparent);
+    --color-border-default: var(--base04);
+    --color-border-muted: var(--base01);
+    --color-neutral-muted: color-mix(in srgb, var(--base04) 40%, transparent);
+    --color-accent-fg: var(--base12);
+    --color-accent-emphasis: var(--base14);
+    --color-success-fg: var(--base09);
+    --color-success-emphasis: var(--base15);
+    --color-attention-fg: var(--base0D);
+    --color-attention-emphasis: var(--base0D);
+    --color-attention-subtle: color-mix(in srgb, var(--base0D) 15%, transparent);
+    --color-danger-fg: var(--base16);
+    --color-danger-emphasis: var(--base16);
+    --color-done-fg: var(--base0F);
+    --color-done-emphasis: var(--base0F);
 
-    --color-inline-mark-bg: rgba(196, 178, 138, 0.3);
-    --color-inline-mark-underline: #c4b28a;
+    --color-inline-mark-bg: color-mix(in srgb, var(--base0D) 30%, transparent);
+    --color-inline-mark-underline: var(--base0D);
 
-    --gfm-alert-note: #8ba4b0;
-    --gfm-alert-tip: #8a9a7b;
-    --gfm-alert-important: #a292a3;
-    --gfm-alert-warning: #dca561;
-    --gfm-alert-caution: #c4746e;
+    --gfm-alert-note: var(--base0C);
+    --gfm-alert-tip: var(--base09);
+    --gfm-alert-important: var(--base0F);
+    --gfm-alert-warning: var(--base0D);
+    --gfm-alert-caution: var(--base0B);
   }
 }
