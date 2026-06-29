@@ -1,20 +1,27 @@
 {
   "name": "kanso-ink-preview",
-  "version": "0.9.2",
+  "version": "1.0.0",
+  "theme": "preview",
+  "themeAppearance": "dark",
   "description": "Kanso Ink preview theme for Inkdrop",
+  "styleSheets": [
+    "index.css"
+  ],
+  "main": "./lib/main.js",
   "keywords": [
     "inkdrop",
-    "markdown"
+    "theme"
   ],
-  "license": "MIT",
-  "author": "Dmitry Gavrilov <dmitry@gavrilov.me>",
   "repository": "https://github.com/dgavrilov/kanso-ink-preview",
+  "author": "Dmitry Gavrilov <dmitry@gavrilov.me>",
+  "license": "BSD 3-Clause",
+  "scripts": {
+    "prepublishOnly": "generate-palette"
+  },
+  "devDependencies": {
+    "@inkdropapp/theme-dev-helpers": "^0.5.0"
+  },
   "engines": {
     "inkdrop": ">=5.9.0 <7"
-  },
-  "theme": "preview",
-  "styleSheets": [
-    "kanso-ink.css"
-  ],
-  "main": "./lib/main.js"
+  }
 }

@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![screenshot](https://raw.githubusercontent.com/dgavrilov/kanso-ink-preview/master/screenshot.png)
+![screenshot](./docs/screenshot.png)
 
 ## Features
 
@@ -36,4 +36,4 @@ $ ipm install kanso-ink-syntax
 
 ## License
 
-This project is licensed under [MIT](LICENSE) license.
+This project is licensed under [BSD 3-Clause](LICENSE) license.
